@@ -312,13 +312,13 @@ while True:
         print("7. translate molecule : Translate a molecule along a specified vector by a given distance")
         print("8. replace input file by output file : Update the input file of a molecule with the stored coordinates")
         print("9. exit - Exit the program")
-    elif user_input == 'print molecule' or '1':
+    elif user_input == 'print molecule':
         # Print the coordinates of a specified molecule
         print_molecule_coordinates(molecule_data_dict)
-    elif user_input == 'store molecule' or '2':
+    elif user_input == 'store molecule':
         # Store the coordinates of a molecule by reading an xyz file
         molecule_data_dict = store_molecule_data(molecule_data_dict)
-    elif user_input == 'bring to origin' or '3':
+    elif user_input == 'bring to origin':
         molecule_name = input("Enter the name of the molecule: ")
         print("Enter the coordinates of the molecule, which should be brought to the origin")
 
@@ -344,7 +344,7 @@ while True:
             molecule_data_dict[molecule_name] = transformed_molecule
         else:
             print(f"Molecule with the name {molecule_name} not found.")
-    elif user_input == 'rotate molecule' or '4':
+    elif user_input == 'rotate molecule':
         molecule_name = input("Enter the name of the molecule: ")
 
         if molecule_name in molecule_data_dict:
@@ -358,7 +358,7 @@ while True:
             molecule_data_dict[molecule_name] = transformed_molecule
         else:
             print(f"Molecule with the name {molecule_name} not found.")
-    elif user_input == 'align molecule' or '5':
+    elif user_input == 'align molecule':
         molecule_name = input("Enter the name of the molecule: ")
 
         if molecule_name in molecule_data_dict:
@@ -372,10 +372,10 @@ while True:
             molecule_data_dict[molecule_name] = aligned_molecule
         else:
             print(f"Molecule with the name {molecule_name} not found.")
-    elif user_input == 'transform planes' or '6':
+    elif user_input == 'transform planes':
         # Transform a plane to make it parallel to a specific plane
         transform_planes(molecule_data_dict)
-    elif user_input == 'replace input file by output file' or '8':
+    elif user_input == 'replace input file by output file':
         molecule_name = input("Enter the name of the molecule: ")
         if molecule_name in molecule_data_dict:
             file_path = input("Enter the file path for output: ")
@@ -383,7 +383,7 @@ while True:
             write_xyz_file(file_path, molecule_data_dict[molecule_name])
         else:
             print(f"Molecule with the name {molecule_name} not found.")
-    elif user_input == 'translate molecule' or '7':
+    elif user_input == 'translate molecule':
         molecule_name = input("Enter the name of the molecule: ")
 
         if molecule_name in molecule_data_dict:
@@ -420,7 +420,7 @@ while True:
             molecule_data_dict[molecule_name] = translated_molecule
         else:
             print(f"Molecule with the name {molecule_name} not found.")
-    elif user_input == 'exit' or '9':
+    elif user_input == 'exit':
         # Exit the program
         print("Exiting the program.")
         break
