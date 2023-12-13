@@ -104,7 +104,3 @@ The program can serve as an educational tool for students studying molecular che
 
 ### Automation in Molecular Dynamics Simulations:
 The tool can be integrated into workflows for molecular dynamics simulations. Researchers can automate the process of preparing molecular structures for simulations by aligning them to specific planes or orientations.
-
-
-## Author
-### Abhishek S
