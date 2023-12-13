@@ -12,7 +12,8 @@ Make sure you have Python installed on your system. The script uses the followin
 
 Install the required libraries using:
 
-    pip install numpy scipy
+    pip install numpy 
+    pip install scipy
 
 Usage
 1) Clone the repository:
